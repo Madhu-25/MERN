@@ -1,0 +1,37 @@
+@import "../../style/mixins.scss";
+.snippet-editor{
+    @include card();
+    label,
+    input,
+    textarea{
+        display: block;
+
+
+    }
+    input, textarea{
+        width:75%;
+        padding: 0.3rem 0.5rem;
+        background: rgb(151, 145, 145);
+        cursor: text;
+        border-radius: 5px;
+    }
+
+    textarea{
+        resize: none;
+        height: 170px;
+
+    }
+
+    label{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .btn-close, .btn-save{
+        @include btn();
+        background-color: cadetblue;
+
+    }
+    .btn-close{
+        margin-left: 3%;
+        
+    }
+}
